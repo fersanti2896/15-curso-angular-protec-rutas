@@ -23,6 +23,7 @@ export class HomeComponent {
 
   logout() {
     /* Ir al backend */
+    this.authService.logout();
     this.router.navigate(['./auth']);
   }
 }
